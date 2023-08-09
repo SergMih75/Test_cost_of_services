@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-style: normal;
-  font-family: sans-serif;
+  font-family: 'Jost', sans-serif;
   text-decoration: none;
   list-style: none;
   transition: 300ms ease;
@@ -28,7 +28,6 @@
 .product-block-title,
 .service-page-slogan {
   margin-left: 2.98px;
-  font-family: "Lato";
 }
 
 .service-page-title {
@@ -142,7 +141,6 @@
 
 .menu-item {
   color: #8f9399;
-  font-family: "Lato";
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -199,7 +197,6 @@
 
 .item-info-title {
   color: #00898a;
-  font-family: "Jost";
   font-size: 10px;
   font-weight: 600;
   line-height: normal;
@@ -213,7 +210,6 @@
 
 .offers-item-title {
   color: #1a465f;
-  font-family: "Jost";
   font-size: 20px;
   font-weight: 600;
   line-height: normal;
@@ -236,7 +232,6 @@
 .offers-item-text {
   width: 322px;
   color: #1a465f;
-  font-family: "Jost";
   font-size: 14px;
   font-weight: 400;
   line-height: normal;
@@ -245,7 +240,6 @@
 
 .offers-item-works {
   color: #1a465f;
-  font-family: "Jost";
   font-size: 13px;
   font-weight: 400;
   line-height: normal;
@@ -269,7 +263,6 @@
   border-radius: 5px;
   border: 1px solid #168457;
   color: #168457;
-  font-family: "Jost";
   font-size: 12px;
   font-weight: 600;
   line-height: 20.04px; /* 167% */
@@ -319,10 +312,9 @@
 }
 
 .offers-item-title__small {
-  color: #333;
-  font-family: "Inter";
+  /* color: #333; */
   font-size: 14.844px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 21.875px; /* 147.368% */
   text-transform: uppercase;
   margin-bottom: 10.4px;
@@ -334,7 +326,6 @@
 
 .offers-item-text__small {
   color: #333;
-  font-family: "Inter";
   font-size: 10.938px;
   font-weight: 400;
   line-height: 18.75px; /* 171.429% */
@@ -369,7 +360,6 @@
   width: 370px;
   margin-bottom: 2px;
   color: #0d3a51;
-  font-family: "Jost";
   font-size: 20px;
   font-weight: 600;
   line-height: 130%; /* 26px */
@@ -380,7 +370,6 @@
 .item-long-text {
   width: 251px;
   color: #1a465f;
-  font-family: "Jost";
   font-size: 14px;
   font-weight: 400;
   line-height: normal;
