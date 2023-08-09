@@ -11,9 +11,10 @@
 }
 
 .wraper {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
   padding-bottom: 203px;
+  border: 1px solid red;
 }
 
 .service-page-wrapper {
@@ -46,9 +47,10 @@
 
 .service-page-btn {
   display: flex;
+  flex-wrap: wrap;
   position: relative;
   margin-left: 0.07px;
-  width: 1320.68px;
+  max-width: 1320.68px;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 18.92px;
@@ -76,7 +78,8 @@
 
 .inform-block {
   display: flex;
-  width: 1316.57px;
+  flex-wrap: wrap;
+  max-width: 1316.57px;
   position: relative;
   justify-content: space-between;
   z-index: 2;
@@ -132,7 +135,7 @@
 
 .product-block-menu {
   display: flex;
-  width: 391px;
+  max-width: 391px;
   height: 18px;
   justify-content: center;
   align-items: flex-start;
@@ -144,7 +147,12 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 18px; /* 128.571% */
+  /* line-height: 18px; 128.571% */
+}
+
+.menu-item:hover {
+  color: #1f1d1d;
+  font-size: 16px;
 }
 
 /* Блок № 3 */
@@ -156,7 +164,8 @@
 
 .offers-block {
   display: flex;
-  width: 1247px;
+  flex-wrap: wrap;
+  max-width: 1247px;
   justify-content: space-between;
   margin-bottom: 26.5px;
 }
@@ -230,7 +239,7 @@
 }
 
 .offers-item-text {
-  width: 322px;
+  max-width: 322px;
   color: #1a465f;
   font-size: 14px;
   font-weight: 400;
@@ -312,7 +321,7 @@
 }
 
 .offers-item-title__small {
-  font-size: 14.844px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 21.875px; /* 147.368% */
   text-transform: uppercase;
@@ -337,9 +346,10 @@
 
 /*-------------------------*/
 .offers-block__three {
-  width: 1246px;
+  max-width: 1246px;
   margin-left: 12px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -356,7 +366,7 @@
 }
 
 .item-long-title {
-  width: 370px;
+  max-width: 370px;
   margin-bottom: 2px;
   color: #0d3a51;
   font-size: 20px;
@@ -387,7 +397,7 @@
 
 .item-long-img__two {
   top: 33px;
-  left: 337.21px;
+  right: 113.21px;
 }
 
 .item-long-img__three {

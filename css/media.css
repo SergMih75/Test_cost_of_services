@@ -1,0 +1,137 @@
+@media (max-width: 1360px){
+    .inform-block {
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .service-page-img {
+        display: none;
+    }
+}
+
+@media (max-width: 1234px){
+    .service-page-btn {
+        justify-content: center;
+        gap: 25px;
+    }
+}
+
+@media (max-width: 1219px){
+    .offers-block__three {
+        justify-content: center;
+        gap: 10px;
+        margin-left: 2px;
+    }
+}
+
+@media (max-width: 1200px){
+    .offers-block {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+      }
+
+    .offers-block__two {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 850px){
+    .service-page-wrapper {
+      padding-left: 0;
+      text-align: center;
+    }
+  
+    .service-page-title {
+      font-size: 20px;
+      opacity: 0.7;
+      position: relative;
+      z-index: 2;
+    }
+
+    .product-block-title {
+        margin-left: 0;
+        text-align: center;
+      }
+  
+    .service-page-slogan {
+      position: relative;
+      z-index: 2;
+    }
+
+    .service-page-btn,
+    .inform-block {
+        flex-direction: column;
+        align-content: center;
+        gap: 5px;
+    }
+
+    .service-page-btn-item {
+        width: 75%;;
+    }
+
+    .inform-block-item {
+        width: 288px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .product-block-nav {
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      .offers {
+        padding-left: 0;
+      }
+  }
+
+  @media (max-width: 500px){
+      .offerts-item-long {
+        width: 305px;
+        padding-left: 10px;
+        margin-right: 2px;
+      }
+
+      .item-long-img__one,
+      .item-long-img__two,
+      .item-long-img__three {
+        opacity: 0.4;
+      }
+     
+
+  }
+  
+
+  @media (max-width: 415px){
+  .product-block-menu {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+    .offers-item {
+        width: 290px;
+        padding-left: 8px;
+        height: auto;
+        padding-bottom: 55px;
+    }
+
+    .offerts-item-btn {
+        top: auto;
+        left: 8px;
+        bottom: 8px;
+        width: 270px;
+    }
+
+    .item-info {
+        width: 110px;
+    }
+
+    .item-info-block {
+        width: auto;
+        justify-content: flex-start;
+        gap: 5px;
+    }
+  }
