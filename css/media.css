@@ -7,6 +7,10 @@
     .service-page-img {
         display: none;
     }
+
+    .service-page-img__small {
+      display: block;
+  }
 }
 
 @media (max-width: 1320px){

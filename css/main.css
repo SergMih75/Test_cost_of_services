@@ -110,6 +110,16 @@
   z-index: 1;
 }
 
+.service-page-img__small {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 84px;
+  height: 151px;
+  z-index: 1;
+  display: none;
+}
+
 /* Блок № 2 */
 
 .product-block {
