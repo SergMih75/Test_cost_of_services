@@ -45,7 +45,7 @@
 
 .service-page-btn {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   position: relative;
   margin-left: 0.07px;
   max-width: 1320.68px;
@@ -56,10 +56,11 @@
 }
 
 .service-page-btn-item {
-  width: 211.36px;
+  /* width: 211.36px; */
+  width: 16%;
   height: 44px;
   padding-top: 10.7px;
-  background: rgba(0, 185, 86, 0.2);
+  background-color: rgba(0, 185, 86, 0.2);
   text-align: center;
   color: #168457;
   font-size: 17.444px;
@@ -73,12 +74,20 @@
 }
 
 .inform-block {
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
   max-width: 1316.57px;
+  overflow: hidden;
   position: relative;
   justify-content: space-between;
   z-index: 2;
+}
+
+.inform-block-line {
+  width: 1316.57px;
+  
+  display: flex;
+  justify-content: space-between;
 }
 
 .inform-block-item {
