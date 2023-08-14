@@ -85,7 +85,7 @@
 
 .inform-block-line {
   width: 1316.57px;
-  
+
   display: flex;
   justify-content: space-between;
 }
@@ -108,6 +108,34 @@
   );
 }
 
+.slider-btn {
+  width: 30px;
+  height: 30px;
+
+  position: absolute;
+  top: 40px;
+
+  border: 2px solid #1f1d1d;
+  border-radius: 50%;
+  cursor: pointer;
+
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  opacity: 0.2;
+}
+
+.slider-btn:hover {
+  opacity: 1;
+}
+
+.slider-btn__left {
+  left: 10px;
+}
+
+.slider-btn__reght {
+  right: 10px;
+}
 .service-page-img {
   position: absolute;
   top: 61px;
