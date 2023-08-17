@@ -15,13 +15,16 @@
     <div class="wraper">
         <section class="service-page-wrapper">
             <h2 class="service-page-title">Стоимость услуг Центрального Агентства Недвижимости</h2>
+
+            <h2 class="service-page-title__391">Стоимость услуг ЦАН</h2>
+
             <p class="service-page-slogan">Платите только за результат</p>
             <div class="service-page-btn">
-                <a class="service-page-btn-item" href="#">Продать</a>
-                <a class="service-page-btn-item" href="#">Купить</a>
-                <a class="service-page-btn-item" href="#">Сдать</a>
-                <a class="service-page-btn-item" href="#">Снять</a>
-                <a class="service-page-btn-item" href="#">Ипотека</a>
+                <div class="service-page-btn-item" data-tab="sell">Продать</div>
+                <div class="service-page-btn-item" data-tab="buy">Купить</div>
+                <div class="service-page-btn-item" data-tab="rent">Сдать</div>
+                <div class="service-page-btn-item" data-tab="rental">Снять</div>
+                <div class="service-page-btn-item" data-tab="mortgage">Ипотека</div>
             </div>
             <div class="inform-block">
                 <div class="inform-block-line">
@@ -56,20 +59,35 @@
         </section>
 
         <section class="product-block">
-            <h2 class="product-block-title">Продать</h2>   
+            <h2 class="product-block-title  sell">Продать</h2>  
+            <h2 class="product-block-title  buy">Купить</h2> 
+            <h2 class="product-block-title  rent">Сдать</h2> 
+            <h2 class="product-block-title  rental">Снять</h2> 
+            <h2 class="product-block-title  mortgage">Ипотека</h2> 
+            <h2 class="product-block-title__start"></h2> 
+
             <div class="product-block-nav">
-                <ul class="product-block-menu">
-                    <li ><a class="menu-item" href="#">Вторичная</a></li>
-                    <li ><a class="menu-item" href="#">Первичная</a></li>
-                    <li ><a class="menu-item" href="#">Загородная</a></li>
-                    <li ><a class="menu-item" href="#">Коммерческая</a></li>
-                </ul>
-            </div>         
+                <div class="product-block-menu-sell">
+                    <div class="menu-item" data-tab="sell-second"><p>Вторичная</p></div>
+                    <div class="menu-item" data-tab="sell-first"><p>Первичная</p></div>
+                    <div class="menu-item" data-tab="sell-suburban"><p>Загородная</p></div>
+                    <div class="menu-item" data-tab="sell-commercial"><p>Коммерческая</p></div>
+                </div>
+
+                <div class="product-block-menu-buy">
+                    <div class="menu-item" data-tab="buy-second"><p>Вторичная</p></div>
+                    <div class="menu-item" data-tab="buy-first"><p>Первичная</p></div>
+                    <div class="menu-item" data-tab="buy-suburban"><p>Загородная</p></div>
+                    <div class="menu-item" data-tab="buy-commercial"><p>Коммерческая</p></div>
+                </div>
+            </div> 
+            <div class="product-block-nav__start"></div>        
         </section>
 
         <section class="offers">
             <div class="offers-block">
-                <div class="offers-item">
+                <!-- Блок продажа дома с участком -->
+                <div class="offers-item  offers-item__start  sell-second">
                     <div class="item-info">
                         <p class="item-info-title">пакетные услуги</p>
                     </div>
@@ -85,7 +103,39 @@
                     <a class="offerts-item-btn" href="#">Подробнее</a>
                 </div>
 
-                <div class="offers-item">
+                 <!-- Блок продажа квартиры -->
+                 <div class="offers-item  offers-item__start  sell-first">
+                    <div class="item-info">
+                        <p class="item-info-title">пакетные услуги</p>
+                    </div>
+                    <h3 class="offers-item-title">Продажа квартиры</h3>
+                    <p class="offers-item-text">Воспользуйтесь комплексным решением по продаже квартиры в Санкт-Петербурге и области</p>
+                    <ul>
+                        <li class="offers-item-works"><img src="./icon/li_style.svg" alt="">Проведение показов</li>
+                        <li class="offers-item-works"><img src="./icon/li_style.svg" alt="">Отчет по эффективности рекламы</li>
+                        <li class="offers-item-works"><img src="./icon/li_style.svg" alt="">Отрисовка плана объекта</li>
+                        <li class="offers-item-works"><img src="./icon/li_style.svg" alt="">Фотосъемка объекта</li>
+                        <li class="offers-item-works"><img src="./icon/li_style.svg" alt="">Организация и сопровождение сделки</li>
+                    </ul>
+                    <a class="offerts-item-btn" href="#">Подробнее</a>
+                </div>
+
+                <!-- Блок оценка недвижимости -->
+                <div class="offers-item  offers-item__start  sell-second">
+                    <div class="item-info">
+                        <p class="item-info-title">пакетные услуги</p>
+                    </div>
+                    <h3 class="offers-item-title">Оценка недвижимости</h3>
+                    <p class="offers-item-text">Честно оцениваем реальную рыночную стоимость загородной недвижимости</p>
+                    <ul>
+                        <li class="offers-item-works"><img src="./icon/li_style.svg" alt="">Консультация агента по недвижимости</li>
+                        <li class="offers-item-works"><img src="./icon/li_style.svg" alt="">Аудит загородного дома или участка</li>
+                        <li class="offers-item-works"><img src="./icon/li_style.svg" alt="">Отчет о проведенной оценке</li>
+                    </ul>
+                    <a class="offerts-item-btn" href="#">Подробнее</a>
+                </div>
+
+                <div class="offers-item  offers-item__start">
                     <div class="item-info-block">
                         <div class="item-info  item-info__small">
                             <p class="item-info-title">Дом</p>
@@ -104,7 +154,8 @@
                     <a class="offerts-item-btn" href="#">Подробнее</a>
                 </div>
 
-                <div class="offers-item">
+                <!-- Блок юридическое сопровождение -->
+                <div class="offers-item  offers-item__start  commercial  sell-second  sell-first">
                     <div class="item-info">
                         <p class="item-info-title">пакетные услуги</p>
                     </div>
@@ -119,24 +170,22 @@
                     </ul>
                     <a class="offerts-item-btn" href="#">Подробнее</a>
                 </div>
-            </div>
 
-            <div class="offers-block  offers-block__two">
                 <div class="offers-small-item-block">
-                    <div class="offers-item  offers-item__small">
+                    <div class="offers-item  offers-item__start  offers-item__small">
                         <h3 class="offers-item-title  offers-item-title__small">Trade in </h3>
                     <p class="offers-item-text__small">Обеняем вашу старую квартиру на новую бесплатно</p>
                     <a class="offerts-item-btn  offerts-item-btn__small" href="#">Подробнее</a>
                     </div>
 
-                    <div class="offers-item  offers-item__small">
+                    <div class="offers-item  offers-item__start  offers-item__small">
                         <h3 class="offers-item-title  offers-item-title__small">ПРОДАЖА УЧАСТКА</h3>
                     <p class="offers-item-text__small">Воспользуйтесь услугой продажа участка в ЛО от ЦАН</p>
                     <a class="offerts-item-btn  offerts-item-btn__small" href="#">Подробнее</a>
                     </div>
                 </div>
 
-                <div class="offers-item">
+                <div class="offers-item  offers-item__start">
                     <div class="item-info-block  item-info-block__average">
                         <div class="item-info">
                             <p class="item-info-title">пакетные услуги</p>
@@ -156,19 +205,67 @@
                     <a class="offerts-item-btn" href="#">Подробнее</a>
                 </div>  
                 
-                    <div class="offers-small-item-block">
-                        <div class="offers-item  offers-item__small">
-                            <h3 class="offers-item-title  offers-item-title__small">ПРОДАЖА КВАРТИРЫ В НОВОСТРОЙКЕ ПО ПЕРЕУСТУПКЕ </h3>
+                <div class="offers-small-item-block">
+                    <div class="offers-item  offers-item__start  offers-item__small">
+                        <h3 class="offers-item-title  offers-item-title__small">ПРОДАЖА КВАРТИРЫ В НОВОСТРОЙКЕ ПО ПЕРЕУСТУПКЕ </h3>
                         <p class="offers-item-text__small  offers-item-text__higher">Подберем объект, проверим документы и организуем сделку </p>
                         <a class="offerts-item-btn  offerts-item-btn__small" href="#">Подробнее</a>
-                        </div>
+                    </div>
     
-                        <div class="offers-item  offers-item__small">
-                            <h3 class="offers-item-title  offers-item-title__small">ПРОДАЖА КВАРТИРЫ СТАНДАРТ</h3>
+                    <div class="offers-item  offers-item__start  offers-item__small">
+                        <h3 class="offers-item-title  offers-item-title__small">ПРОДАЖА КВАРТИРЫ СТАНДАРТ</h3>
                         <p class="offers-item-text__small  offers-item-text__higher">Воспользуйтесь комплексным решением по продаже квартиры в Санкт-Петербурге и ЛО</p>
                         <a class="offerts-item-btn  offerts-item-btn__small" href="#">Подробнее</a>
-                        </div>
                     </div>
+                </div>
+
+                <!-- Блок снять -->
+                <div class="offers-item  rental">
+                    <div class="item-info">
+                        <p class="item-info-title">пакетные услуги</p>
+                    </div>
+                    <h3 class="offers-item-title  offers-item-title__small">Снять квартиру с ЦАН</h3>
+                    <p class="offers-item-text">Воспользуйтесь комплексным решением по подбору и съему квартиры в Санкт-Петербурге</p>
+                    <ul>
+                        <li class="offers-item-works"><img src="./icon/li_style.svg" alt="">Проводим полную юридическую проверку объекта</li>
+                        <li class="offers-item-works"><img src="./icon/li_style.svg" alt="">Подбор объектов, используя все актуальные источники</li>
+                        <li class="offers-item-works"><img src="./icon/li_style.svg" alt="">Согласование просмотров</li>
+                        <li class="offers-item-works"><img src="./icon/li_style.svg" alt="">Заключение юридически грамотного договора</li>
+                        <li class="offers-item-works"><img src="./icon/li_style.svg" alt="">Составление описи имущества</li>
+                    </ul>
+                    <a class="offerts-item-btn" href="#">Подробнее</a>
+                </div>
+
+                <!-- Блок сдать -->
+                <div class="offers-item  rent">
+                    <div class="item-info">
+                        <p class="item-info-title">пакетные услуги</p>
+                    </div>
+                    <h3 class="offers-item-title  offers-item-title__small">Сдать квартиру с ЦАН</h3>
+                    <p class="offers-item-text">Воспользуйтесь комплексным решением по сдаче квартиры в Санкт-Петербурге</p>
+                    <ul>
+                        <li class="offers-item-works"><img src="./icon/li_style.svg" alt="">Проведение маркетинговой кампании объекта</li>
+                        <li class="offers-item-works"><img src="./icon/li_style.svg" alt="">Размещение квартиры в ТОП-объявлениях</li>
+                        <li class="offers-item-works"><img src="./icon/li_style.svg" alt="">Согласование просмотров</li>
+                        <li class="offers-item-works"><img src="./icon/li_style.svg" alt="">Заключение юридически грамотного договора, составление описи имущества</li>
+                    </ul>
+                    <a class="offerts-item-btn" href="#">Подробнее</a>
+                </div>
+
+                <!-- Блок ипотека -->
+                <div class="offers-item  mortgage">
+                    <div class="item-info">
+                        <p class="item-info-title">пакетные услуги</p>
+                    </div>
+                    <h3 class="offers-item-title">Ипотека вместе с ЦАН</h3>
+                    <p class="offers-item-text  offers-item-text__null"></p>
+                    <ul>
+                        <li class="offers-item-works"><img src="./icon/li_style.svg" alt="">Подберем лучшую ипотечную программу от банков-партнеров</li>
+                        <li class="offers-item-works"><img src="./icon/li_style.svg" alt="">Подача заявления</li>
+                        <li class="offers-item-works"><img src="./icon/li_style.svg" alt="">Одобрение заявки</li>
+                    </ul>
+                    <a class="offerts-item-btn" href="#">Подробнее</a>
+                </div>
             </div>
 
             <div class="offers-block__three">
