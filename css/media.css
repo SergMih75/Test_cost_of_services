@@ -78,7 +78,8 @@
 
 @media (max-width: 950px){
   .faq-item {
-    width: 100%;
+    width: 98%;
+    margin: 0 auto;
     padding-left: 8px;
   }
 
