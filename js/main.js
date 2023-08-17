@@ -9,29 +9,29 @@ faqItem.forEach((faqItem) => {
   });
 });
 
-const sliderBtn = document.querySelectorAll(".slider-btn");
-let sliderLine = document.querySelector(".inform-block-line");
-let move = 0;
+// const sliderBtn = document.querySelectorAll(".slider-btn");
+// let sliderLine = document.querySelector(".inform-block-line");
+// let move = 0;
 
-sliderBtn.forEach((sliderBtn) => {
-  sliderBtn.addEventListener("click", () => {
-    if (sliderBtn.classList.contains("slider-btn__left")) {
-      move = move + 332;
-      if (move > 996) {
-        move = 0;
-      }
-      sliderLine.style.left = -move + "px";
-    } else {
-      if (move == 0) {
-        move = 996;
-        sliderLine.style.left = -move + "px";
-      } else {
-        move = move - 332;
-        sliderLine.style.left = -move + "px";
-      }
-    }
-  });
-});
+// sliderBtn.forEach((sliderBtn) => {
+//   sliderBtn.addEventListener("click", () => {
+//     if (sliderBtn.classList.contains("slider-btn__left")) {
+//       move = move + 332;
+//       if (move > 996) {
+//         move = 0;
+//       }
+//       sliderLine.style.left = -move + "px";
+//     } else {
+//       if (move == 0) {
+//         move = 996;
+//         sliderLine.style.left = -move + "px";
+//       } else {
+//         move = move - 332;
+//         sliderLine.style.left = -move + "px";
+//       }
+//     }
+//   });
+// });
 
 const serviceMenu = document.querySelectorAll(".service-page-btn-item");
 const categoryMenu = document.querySelectorAll(".menu-item");
@@ -178,3 +178,6 @@ function buy_sellContent(categoryAtrib) {
     }
   });
 }
+
+
+new Swiper('.swiper-container');

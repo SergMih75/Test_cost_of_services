@@ -91,10 +91,30 @@
 .inform-block {
   height: 110.541px;
 
+  position: relative;
+
   overflow: hidden;
+  overflow-y: none;
+  overflow-x: auto;
   position: relative;
   z-index: 2;
+
+  user-select: none;
 }
+
+/* Скролл */
+
+
+.inform-block::-webkit-scrollbar  {
+  display: none;
+}
+
+.inform-block {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  }
+
+
 
 .inform-block-line {
   width: 1316px;
