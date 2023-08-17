@@ -544,6 +544,70 @@
   line-height: 20px; /* 125% */
 }
 
+/* Баннер  */
+.banner {
+  width: 360px;
+  height: 162px;
+  margin: 0 auto;
+  margin-top: 14px;
+  margin-left: -12px;
+  padding-left: 19px;
+
+  position: relative;
+
+  text-align: left;
+
+  border-radius: 11px;
+  background-color: #9ad8be;
+
+  display: none;
+}
+
+.banner-title {
+  margin-top: 40px;
+
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px; /* 111.111% */
+}
+
+.banner-text {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+
+.banner-btn {
+  width: 146px;
+  height: 37px;
+  margin-top: 20px;
+
+  display: block;
+
+  border-radius: 3px;
+  background-color: #168457;
+
+  text-align: center;
+
+  cursor: pointer;
+
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 37px; /* 166.667% */
+}
+
+.banner-img {
+  width: 200px;
+  height: 150px;
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
 .item-text {
   color: #0e233a;
   font-size: 14px;
