@@ -38,13 +38,16 @@ const categoryMenu = document.querySelectorAll(".menu-item");
 const contentTitle = document.querySelectorAll(".product-block-title");
 const contentTitleStart = document.querySelector(".product-block-title__start");
 const productMenu = document.querySelector(".product-block-nav");
-const menuSell = document.querySelector ('.product-block-menu-sell')
-const menuBuy = document.querySelector ('.product-block-menu-buy')
+const menuSell = document.querySelector(".product-block-menu-sell");
+const menuBuy = document.querySelector(".product-block-menu-buy");
 const productMenuStart = document.querySelector(".product-block-nav__start");
 const offersBlock = document.querySelectorAll(".offers-small-item-block");
 const offersSection = document.querySelector(".offers-block");
 const offersItem = document.querySelectorAll(".offers-item");
 const itemStart = document.querySelectorAll(".offers-item__start");
+const blockThree = document.querySelector(".offers-block__three");
+const blockFour = document.querySelector(".offers-block__four");
+const feedbackQuestion = document.querySelector(".feedback-questions");
 
 serviceMenu.forEach(function (elem) {
   elem.addEventListener("click", serviceBtn);
@@ -69,7 +72,7 @@ function categoryBtn() {
   });
   this.classList.add("menu-item__active");
   let categoryAtrib = this.getAttribute("data-tab");
-  buy_sellContent(categoryAtrib)
+  buy_sellContent(categoryAtrib);
 }
 
 function activeContent(serviceAtrib) {
@@ -81,12 +84,6 @@ function activeContent(serviceAtrib) {
         productMenu.style.display = "flex";
         menuSell.style.display = "flex";
         menuBuy.style.display = "none";
-        offersBlock.forEach((offersBlock) => {
-          offersBlock.style.display = "block";
-        });
-        offersItem.forEach((offersItem) => {
-          offersItem.style.display = "block";
-        });
         offersSection.style.justifyContent = "space-between";
         return;
       } else {
@@ -97,12 +94,6 @@ function activeContent(serviceAtrib) {
         productMenu.style.display = "flex";
         menuBuy.style.display = "flex";
         menuSell.style.display = "none";
-        offersBlock.forEach((offersBlock) => {
-          offersBlock.style.display = "block";
-        });
-        offersItem.forEach((offersItem) => {
-          offersItem.style.display = "block";
-        });
         offersSection.style.justifyContent = "space-between";
         return;
       } else {
@@ -111,6 +102,9 @@ function activeContent(serviceAtrib) {
       if (item.classList.contains("rental")) {
         offersBlock.forEach((offersBlock) => {
           offersBlock.style.display = "none";
+          blockThree.style.display = "none";
+          feedbackQuestion.style.display = "none";
+          blockFour.style.display = "flex";
         });
         offersItem.forEach((offersItem) => {
           offersItem.style.display = "none";
@@ -125,6 +119,9 @@ function activeContent(serviceAtrib) {
       if (item.classList.contains("rent")) {
         offersBlock.forEach((offersBlock) => {
           offersBlock.style.display = "none";
+          blockThree.style.display = "none";
+          feedbackQuestion.style.display = "none";
+          blockFour.style.display = "flex";
         });
         offersItem.forEach((offersItem) => {
           offersItem.style.display = "none";
@@ -139,6 +136,9 @@ function activeContent(serviceAtrib) {
       if (item.classList.contains("mortgage")) {
         offersBlock.forEach((offersBlock) => {
           offersBlock.style.display = "none";
+          blockThree.style.display = "none";
+          feedbackQuestion.style.display = "none";
+          blockFour.style.display = "flex";
         });
         offersItem.forEach((offersItem) => {
           offersItem.style.display = "none";
@@ -158,18 +158,23 @@ function activeContent(serviceAtrib) {
 }
 
 function buy_sellContent(categoryAtrib) {
-    offersItem.forEach((offersItem)=>{
+  offersItem.forEach((offersItem) => {
     offersItem.style.display = "none";
     offersBlock.forEach((offersBlock) => {
       offersBlock.style.display = "none";
+      blockThree.style.display = "none";
+      feedbackQuestion.style.display = "none";
+      blockFour.style.display = "flex";
     });
 
     if (offersItem.classList.contains(categoryAtrib)) {
-      // console.log(serviceAtrib);
       offersItem.style.display = "block";
     }
-    if (categoryAtrib == "commercial") {
+    if (categoryAtrib == "sell-commercial") {
       offersSection.style.justifyContent = "center";
     }
-  })
+    if (categoryAtrib == "buy-commercial") {
+      offersSection.style.justifyContent = "center";
+    }
+  });
 }
