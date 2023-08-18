@@ -48,8 +48,8 @@ const itemStart = document.querySelectorAll(".offers-item__start");
 const blockThree = document.querySelector(".offers-block__three");
 const blockFour = document.querySelector(".offers-block__four");
 const feedbackQuestion = document.querySelector(".feedback-questions");
-const feeddbackBlosk = document.querySelector('.feedback-block')
-console.log('feeddbackBlosk: ', feeddbackBlosk);
+const feeddbackBlosk = document.querySelector(".feedback-block");
+let screenWidth = window.screen.width;
 
 serviceMenu.forEach(function (elem) {
   elem.addEventListener("click", serviceBtn);
@@ -87,10 +87,10 @@ function activeContent(serviceAtrib) {
         menuSell.style.display = "flex";
         menuBuy.style.display = "none";
         offersSection.style.justifyContent = "center";
-        offersSection.style.marginLeft=-10+'px'
-        offersItem.forEach((offersItem)=>{
-          offersItem.style.marginLeft=10+'px'
-        })
+        offersSection.style.marginLeft = -10 + "px";
+        offersItem.forEach((offersItem) => {
+          offersItem.style.marginLeft = 10 + "px";
+        });
 
         offersItem.forEach((offersItem) => {
           if (offersItem.classList.contains("sell-zero")) {
@@ -109,10 +109,10 @@ function activeContent(serviceAtrib) {
         menuBuy.style.display = "flex";
         menuSell.style.display = "none";
         offersSection.style.justifyContent = "center";
-        offersSection.style.marginLeft=-10+'px'
-        offersItem.forEach((offersItem)=>{
-        offersItem.style.marginLeft=10+'px'
-        })
+        offersSection.style.marginLeft = -10 + "px";
+        offersItem.forEach((offersItem) => {
+          offersItem.style.marginLeft = 10 + "px";
+        });
 
         offersItem.forEach((offersItem) => {
           if (offersItem.classList.contains("buy-zero")) {
@@ -128,12 +128,15 @@ function activeContent(serviceAtrib) {
       if (item.classList.contains("rental")) {
         offersBlock.forEach((offersBlock) => {
           offersBlock.style.display = "none";
-          blockThree.style.display = "none";
+
+          if (screenWidth < 395) {
+            blockThree.style.display = "none";
+            blockFour.style.display = "flex";
+          }
+
           feedbackQuestion.style.display = "none";
 
           feeddbackBlosk.style.justifyContent = "center";
-
-          blockFour.style.display = "flex";
         });
         offersItem.forEach((offersItem) => {
           offersItem.style.display = "none";
@@ -148,12 +151,15 @@ function activeContent(serviceAtrib) {
       if (item.classList.contains("rent")) {
         offersBlock.forEach((offersBlock) => {
           offersBlock.style.display = "none";
-          blockThree.style.display = "none";
+
+          if (screenWidth < 395) {
+            blockThree.style.display = "none";
+            blockFour.style.display = "flex";
+          }
+
           feedbackQuestion.style.display = "none";
 
           feeddbackBlosk.style.justifyContent = "center";
-
-          blockFour.style.display = "flex";
         });
         offersItem.forEach((offersItem) => {
           offersItem.style.display = "none";
@@ -168,12 +174,15 @@ function activeContent(serviceAtrib) {
       if (item.classList.contains("mortgage")) {
         offersBlock.forEach((offersBlock) => {
           offersBlock.style.display = "none";
-          blockThree.style.display = "none";
+
+          if (screenWidth < 395) {
+            blockThree.style.display = "none";
+            blockFour.style.display = "flex";
+          }
+
           feedbackQuestion.style.display = "none";
 
           feeddbackBlosk.style.justifyContent = "center";
-
-          blockFour.style.display = "flex";
         });
         offersItem.forEach((offersItem) => {
           offersItem.style.display = "none";
@@ -197,12 +206,15 @@ function buy_sellContent(categoryAtrib) {
     offersItem.style.display = "none";
     offersBlock.forEach((offersBlock) => {
       offersBlock.style.display = "none";
-      blockThree.style.display = "none";
+
+      if (screenWidth < 395) {
+        blockThree.style.display = "none";
+        blockFour.style.display = "flex";
+      }
+
       feedbackQuestion.style.display = "none";
 
       feeddbackBlosk.style.justifyContent = "center";
-      
-      blockFour.style.display = "flex";
     });
 
     if (offersItem.classList.contains(categoryAtrib)) {
