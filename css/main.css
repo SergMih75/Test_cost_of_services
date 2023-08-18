@@ -374,17 +374,21 @@
 }
 
 .offerts-item-btn {
-  display: flex;
   width: 322px;
   height: 41px;
-  position: absolute;
-  top: 288px;
-  left: 26px;
   margin-bottom: 0;
+
+  position: absolute;
+  left: 26px;
+  bottom: 14px;
+
+  display: flex;
   justify-content: center;
   align-items: center;
+
   border-radius: 5px;
   border: 1px solid #168457;
+
   color: #168457;
   font-size: 12px;
   font-weight: 600;
@@ -456,7 +460,8 @@
 /*-------------------------*/
 .offers-block__three {
   max-width: 1246px;
-  margin-left: 12px;
+  /* margin-left: 12px; */
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -717,6 +722,7 @@
 
 .feedback-questions {
   width: 296.7px;
+  height: 414px;
   padding-top: 22px;
   padding-left: 19px;
   padding-bottom: 33px;
