@@ -48,6 +48,8 @@ const itemStart = document.querySelectorAll(".offers-item__start");
 const blockThree = document.querySelector(".offers-block__three");
 const blockFour = document.querySelector(".offers-block__four");
 const feedbackQuestion = document.querySelector(".feedback-questions");
+const feeddbackBlosk = document.querySelector('.feedback-block')
+console.log('feeddbackBlosk: ', feeddbackBlosk);
 
 serviceMenu.forEach(function (elem) {
   elem.addEventListener("click", serviceBtn);
@@ -89,6 +91,14 @@ function activeContent(serviceAtrib) {
         offersItem.forEach((offersItem)=>{
           offersItem.style.marginLeft=10+'px'
         })
+
+        offersItem.forEach((offersItem) => {
+          if (offersItem.classList.contains("sell-zero")) {
+            offersItem.style.display = "block";
+          } else {
+            offersItem.style.display = "none";
+          }
+        });
         return;
       } else {
         productMenu.style.display = "none";
@@ -101,8 +111,16 @@ function activeContent(serviceAtrib) {
         offersSection.style.justifyContent = "center";
         offersSection.style.marginLeft=-10+'px'
         offersItem.forEach((offersItem)=>{
-          offersItem.style.marginLeft=10+'px'
+        offersItem.style.marginLeft=10+'px'
         })
+
+        offersItem.forEach((offersItem) => {
+          if (offersItem.classList.contains("buy-zero")) {
+            offersItem.style.display = "block";
+          } else {
+            offersItem.style.display = "none";
+          }
+        });
         return;
       } else {
         productMenu.style.display = "none";
@@ -112,6 +130,9 @@ function activeContent(serviceAtrib) {
           offersBlock.style.display = "none";
           blockThree.style.display = "none";
           feedbackQuestion.style.display = "none";
+
+          feeddbackBlosk.style.justifyContent = "center";
+
           blockFour.style.display = "flex";
         });
         offersItem.forEach((offersItem) => {
@@ -129,6 +150,9 @@ function activeContent(serviceAtrib) {
           offersBlock.style.display = "none";
           blockThree.style.display = "none";
           feedbackQuestion.style.display = "none";
+
+          feeddbackBlosk.style.justifyContent = "center";
+
           blockFour.style.display = "flex";
         });
         offersItem.forEach((offersItem) => {
@@ -146,6 +170,9 @@ function activeContent(serviceAtrib) {
           offersBlock.style.display = "none";
           blockThree.style.display = "none";
           feedbackQuestion.style.display = "none";
+
+          feeddbackBlosk.style.justifyContent = "center";
+
           blockFour.style.display = "flex";
         });
         offersItem.forEach((offersItem) => {
@@ -172,6 +199,9 @@ function buy_sellContent(categoryAtrib) {
       offersBlock.style.display = "none";
       blockThree.style.display = "none";
       feedbackQuestion.style.display = "none";
+
+      feeddbackBlosk.style.justifyContent = "center";
+      
       blockFour.style.display = "flex";
     });
 
