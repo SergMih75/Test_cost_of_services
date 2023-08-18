@@ -49,7 +49,16 @@ const blockThree = document.querySelector(".offers-block__three");
 const blockFour = document.querySelector(".offers-block__four");
 const feedbackQuestion = document.querySelector(".feedback-questions");
 const feeddbackBlosk = document.querySelector(".feedback-block");
-let screenWidth = window.screen.width;
+// let screenWidth = window.screen.width;
+let screenWidth = 391;
+
+if (screenWidth < 395) {
+  console.log('fgxfghk');
+  blockThree.style.display = "none";
+  blockFour.style.display = "flex";
+  feedbackQuestion.style.display = "none";
+  feeddbackBlosk.style.justifyContent = "center";
+}
 
 serviceMenu.forEach(function (elem) {
   elem.addEventListener("click", serviceBtn);
