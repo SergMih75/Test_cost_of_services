@@ -49,8 +49,8 @@ const blockThree = document.querySelector(".offers-block__three");
 const blockFour = document.querySelector(".offers-block__four");
 const feedbackQuestion = document.querySelector(".feedback-questions");
 const feeddbackBlosk = document.querySelector(".feedback-block");
-let screenWidth = window.screen.width;
-// let screenWidth = 391;
+// let screenWidth = window.screen.width;
+let screenWidth = 391;
 
 if (screenWidth < 395) {
   console.log('fgxfghk');
@@ -108,6 +108,9 @@ function activeContent(serviceAtrib) {
             offersItem.style.display = "none";
           }
         });
+        offersBlock.forEach((offersBlock) => {
+          offersBlock.style.display = "none";
+        })
         return;
       } else {
         productMenu.style.display = "none";
@@ -130,6 +133,11 @@ function activeContent(serviceAtrib) {
             offersItem.style.display = "none";
           }
         });
+
+        offersBlock.forEach((offersBlock) => {
+          offersBlock.style.display = "none";
+        })
+        
         return;
       } else {
         productMenu.style.display = "none";
