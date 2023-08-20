@@ -341,4 +341,8 @@
     .banner {display: block;}
 
     .offers-block {flex-direction: column;}
+
+    .offers-block__three {display: none;}
+
+    .offers-block__four {display: block;}
   }

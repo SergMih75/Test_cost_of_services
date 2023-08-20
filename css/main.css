@@ -459,7 +459,8 @@
 
 /*-------------------------*/
 .offers-block__three {
-  max-width: 1246px;
+  /* max-width: 1246px; */
+   width: 1246px;
   /* margin-left: 12px; */
 
   display: flex;
