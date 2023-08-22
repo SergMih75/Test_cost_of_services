@@ -117,7 +117,9 @@
 
 
 .inform-block-line {
-  width: 1316px;
+
+  /* ! ОБновление от 22.08.23 Длинна блока под ширину экрана*/
+  width: 1237px;
 
   position: absolute;
   top: 0;
@@ -133,7 +135,10 @@
   justify-content: space-between;
   padding-left: 21.14px;
   padding-right: 8.19px;
-  width: 319px;
+
+  /* ! ОБновление от 22.08.23 Длинна блока под ширину экрана*/
+  width: 300px;
+  
   height: 110.541px;
   flex-shrink: 0;
   background-image: linear-gradient(
@@ -143,6 +148,12 @@
     #fcfbfd 56.19%,
     #fff 100%
   );
+}
+
+/* ! ОБновление от 22.08.23 Длинна блока под ширину экрана. Добавлен класс для третьей картинки в карточке*/
+.inform-block-item-img {
+  width: 80px;
+  height: 80px;
 }
 
 .slider-btn {
@@ -267,7 +278,6 @@
 
   /* ! Корректировка от 22.08.23 */
   width: 1247px;
-  
   justify-content: space-between;
   margin-bottom: 26.5px;
 }

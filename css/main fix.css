@@ -1,0 +1,39 @@
+.inform-block-line {
+
+  /* ! ОБновление от 22.08.23 Длинна блока под ширину экрана*/
+  width: 1237px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.inform-block-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 21.14px;
+  padding-right: 8.19px;
+
+  /* ! ОБновление от 22.08.23 Длинна блока под ширину экрана*/
+  width: 300px;
+  
+  height: 110.541px;
+  flex-shrink: 0;
+  background-image: linear-gradient(
+    223deg,
+    #edeaf2 1.71%,
+    #f3f1f6 17.37%,
+    #fcfbfd 56.19%,
+    #fff 100%
+  );
+}
+
+/* ! ОБновление от 22.08.23 Длинна блока под ширину экрана. Добавлен класс для третьей картинки в карточке*/
+.inform-block-item-img {
+  width: 80px;
+  height: 80px;
+}
