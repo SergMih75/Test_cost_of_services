@@ -340,11 +340,22 @@
     
     .banner {display: block;}
 
-    .offers-block {flex-direction: column;}
+    /* ! Корректировка от 22.08.23 */
+
+    .offers-block {
+    flex-direction: column;
+    width: 355px;
+    margin: 0 auto; 
+  }
+
+  .offers-item {padding-left: 23px;}
 
     .offers-block__three {display: none;}
 
     .offers-block__four {display: block;}
 
-    .offerts-item-btn {left: 40px;}
+    /*! Корректировка от 22.08.23 */
+
+    .offerts-item-btn {left: 23px;
+    width: 300px;}
   }

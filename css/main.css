@@ -264,7 +264,10 @@
 .offers-block {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1247px;
+
+  /* ! Корректировка от 22.08.23 */
+  width: 1247px;
+  
   justify-content: space-between;
   margin-bottom: 26.5px;
 }
